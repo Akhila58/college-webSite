@@ -1,0 +1,91 @@
+/* PLACEMENTS SECTION CSS STARTS */
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #003366; /* Thick blue background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* Placement Stats Styling */
+.placement-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px;
+}
+
+.stat {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    color: #333;
+}
+
+.stat h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 10px;
+    display: inline-block; /* Ensure it's inline-block so animation works */
+}
+
+/* Increase image size */
+img {
+    width: 100px; /* Increased size */
+    height: 100px; /* Increased size */
+    margin-top: 20px;
+}
+
+/* Number animation */
+.animated-number {
+    animation: move-number 1.5s ease-in-out infinite;
+}
+
+/* Keyframes for the moving number animation */
+@keyframes move-number {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending at the same place */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px at the midpoint */
+    }
+}
+
+/* Make cards sequential in large devices (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .placement-stats {
+        flex-wrap: nowrap; /* No wrapping, force all cards in one row */
+        justify-content: space-between;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .placement-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* PLACEMENTS SECTION CSS ENDS */

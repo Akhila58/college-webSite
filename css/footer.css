@@ -1,0 +1,158 @@
+/* Footer CSS STARTS */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Takes up remaining space between navbar and footer */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap; /* Flex-wrap for responsiveness */
+    text-align: center; /* Centering text by default */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px; /* Ensure elements are responsive */
+    box-sizing: border-box;
+    text-align: center; /* Center text in each section */
+}
+
+.footer-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #8a4db5; /* Highlight color on hover */
+}
+
+/* Social Icon Styles */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the social icons */
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color:#8a4db5; /* Highlight color on hover */
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+/* Footer Center Info */
+.footer-center p {
+    margin: 5px 0;
+}
+
+/* Footer Right Info */
+.footer-right h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-right p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive Design */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, 
+    .footer-center, 
+    .footer-right {
+        padding: 10px 0;
+        min-width: 100%; /* Ensure full-width for columns */
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+    footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        padding: 0;
+    }
+
+    .footer-right p {
+        font-size: 13px; /* Adjust font size for smaller devices */
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+}
+/* Footer CSS ENDS */

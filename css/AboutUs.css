@@ -1,0 +1,55 @@
+/*aboutUs css starts*/
+.AboutUs-section{
+    width:100%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+    background-color:#9b82ac;
+}
+.wcu-card-image{
+    height:130px;
+    width:130px;
+}
+.wcu-section-heading{
+    font-size:36px;
+    font-weight: 600;
+
+}
+.wcr-section-description{
+   color:#777;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding:10px;
+}
+.row-ap{
+    margin-top: 7%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.A-col{
+  flex-basis: 40%;
+  background-color:#fff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding:20px 12px;
+  box-sizing: border-box;
+  transition:0.5s;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+.A-col:hover{
+      box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+@media(max-width: 700px){
+    .row-ap{
+        flex-direction: column;
+    }
+}
+/*aboutUs css endss*/

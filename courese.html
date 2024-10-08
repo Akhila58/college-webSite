@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="complete_college.css">
+    
+    <link rel="stylesheet" href="./css/Naac.css">
+    <link rel="stylesheet" href="./css/AboutUs.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/placements.css">
+    <link rel="stylesheet" href="./css/couses.css">
+
+
+
+    <script src="https://kit.fontawesome.com/bf541d0dc2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+<!--styling for faciliteis section starts-->
+   <style>
+   /*HOSTEL CSS STARTS*/
+
+   /* Main container for the section */
+   .homeCourses {
+       text-align: center;
+       padding: 40px;
+       background-color: #f7f7f7;
+       width: 100%; /* Ensure section takes full width */
+   }
+
+   .homeCourses h2 {
+       font-size: 32px;
+       font-family: 'Roboto', sans-serif;
+       color: #333;
+       margin-bottom: 20px;
+   }
+
+   /* Owl carousel items styling */
+   .owl-carousel .item {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   /* Styling for the card container */
+   .item-card-section-hostel {
+       width: 300px;
+       height: 350px;
+       background-color: #ffffff;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       text-align: center;
+       padding: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       overflow: hidden;
+       cursor: pointer;
+       transition: transform 0.2s;
+   }
+
+   /* Image in the card should maintain aspect ratio */
+   .itemcard-image {
+       width: 100%;
+       height: 230px;
+       object-fit: cover;
+       border-bottom: 1px solid #ddd;
+   }
+
+   /* Styling for the card title */
+   .item-name {
+       font-size: 18px;
+       font-family: 'Roboto', sans-serif;
+       font-weight: 500;
+       color: #333;
+       margin: 10px 0;
+   }
+
+   /* Hover effect on the card */
+   .item-card-section-hostel:hover {
+       transform: scale(1.05);
+   }
+
+   /* Adjust responsiveness */
+   @media screen and (max-width: 768px) {
+       .item-card-section-hostel {
+           width: 250px;
+           height: 320px;
+       }
+
+       .itemcard-image {
+           height: 200px;
+       }
+   }
+
+   /*HOSTEL CSS ENDS*/
+   </style>
+<!--styling for faciliteis section ends-->
+
+</head>
+<body>
+<!--LANDING PAGE STARTS-->
+  <!---start navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#"><i class="fa-solid fa-building-columns fa-2x" style="color:#8a4db5" ></i></a>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Placements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="login-button">
+            Login/Register
+        </a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+  <!----end navbar-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!--LANDING PAGE ENDS-->
+
+
+<!--courses section-->
+    <div class="container">
+    <h1>Courses We Offer</h1>
+    <div class="course-cards">
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="https://en.wikipedia.org/wiki/Computer_science_and_engineering"><img src="./images/CSE1.jpeg" alt="Computer Science" class="course-image"></a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Computer Science (CSE)</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+          <a href="https://en.wikipedia.org/wiki/Artificial_intelligence"><img src="./images/AIML.jpeg" class="course-image">
+          </a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Artificial Intelligence and Machine Learning (AIML)</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="https://en.wikipedia.org/wiki/Internet_of_things"> <img src="./images/IOT.jpeg" alt="Internet of Things" class="course-image">
+         </a>        
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Internet of Things (IoT)</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+          <a href="https://en.wikipedia.org/wiki/Electronic_engineering"><img src="./images/ECE.jpeg" alt="ECE" class="course-image">
+          </a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">ECE</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="https://en.wikipedia.org/wiki/Electrical_engineering"> <img src="./images/EEE.jpg" alt="Electrical & Electronics" class="course-image">
+         </a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Electrical & Electronics</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+          <a href="https://en.wikipedia.org/wiki/Mechanical_engineering"><img src="./images/MECHANICAL.jpeg" alt="Mechanical Engineering" class="course-image">
+          </a>
+          
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Mechanical Engineering</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="https://en.wikipedia.org/wiki/Information_technology"><img src="./images/IT.jpg" alt="Computer Science" class="course-image"></a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Information Technology</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="https://en.wikipedia.org/wiki/Artificial_intelligence"><img src="./images/AI.jpg" alt="Computer Science" class="course-image"></a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Artificial intelligence</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="https://en.wikipedia.org/wiki/Data_science"><img src="./images/DS.jpeg" alt="Computer Science" class="course-image"></a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Data Science (DS)</p>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-image-container">
+         <a href="registration.html"><img src="./images/CIVIL.jpg" alt="Computer Science" class="course-image"></a>
+        </div>
+        <div class="course-title-container">
+          <p class="course-title">Civil</p>
+        </div>
+      </div>
+      
+     
+    </div>
+    </div>
+<!--courses section-->
+
+    
+<!--footer section starts-->
+    <footer>
+        <div class="footer-container">
+         
+          <div class="footer-center">
+            <p>surampalem</p>
+            <p>+91 749258</p>
+            <p>ABC@gmail.com</p>
+          </div>
+          <div class="footer-right">
+            <h2>Aditya University</h2>
+            <p>Aditya engineering college an autonomous institution. It is well disciplined, infrastructure and secured college</p>
+            <div class="social-icons">
+              <a href="https://github.com/Akhila58"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/akhila-nakka-8594332a7/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&t=2934s"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-left">
+            <p class="footer-title">Akhila</p>
+            <p>Copyright © 2024 Akhila.</p>
+          </div>
+        </div>
+    </footer>
+<!--footer section ends-->
+<script src="./Js/regitrstion.js"></script>
+
+</body>
+</html>
